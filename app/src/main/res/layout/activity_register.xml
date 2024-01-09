@@ -55,7 +55,7 @@
         android:id="@+id/editTextLoginPassword"
         android:layout_width="326dp"
         android:layout_height="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRegEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername" />
 
     <TextView
         android:id="@+id/textView4"
