@@ -42,11 +42,14 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = edPassword.getText().toString();
                 String email = edEmail.getText().toString();
                 String confirmpassword = edConfirmPass.getText().toString();
+                //database object
+                Database db = new Database(getApplicationContext(), "HealthCare", null, 1);
                 if (username.length() == 0 || password.length() == 0 || email.length() == 0 || confirmpassword.length() == 0) {
                     Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT).show();
                 } else {
                     if (password.compareTo(confirmpassword) == 0) {
                         if(isvalid(password)){
+                            db.register(email, username, password);
                             Toast.makeText(getApplicationContext(), "Record inserted", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
 
