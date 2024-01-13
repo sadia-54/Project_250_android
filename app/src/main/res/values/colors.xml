@@ -18,5 +18,9 @@
     <color name="primary_dark">#FF000000</color>
     <color name="purple_dark">#FF3700B3</color>
     <color name="yellow_light">#FFFFE082</color>
+    <color name="deep_dark_purple">#FF330033</color>
+    <color name="grey_light">#FFD3D3D3</color> <!-- Light Grey -->
+    <color name="grey">#FF808080</color>      <!-- Medium Grey -->
+    <color name="grey_dark">#FF404040</color> <!-- Dark Grey -->
 
 </resources>
