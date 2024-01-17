@@ -22,10 +22,10 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         edUsername = findViewById(R.id.editTextRegUsername);
-        edEmail = findViewById(R.id.editTextRegEmail);
-        edPassword = findViewById(R.id.editTextLoginPassword);
-        edConfirmPass = findViewById(R.id.editTextRegConfirmPassword);
-        btn = findViewById(R.id.buttonRegister);
+        edEmail = findViewById(R.id.editTextAppFullName);
+        edPassword = findViewById(R.id.editTextAppContactNumber);
+        edConfirmPass = findViewById(R.id.editTextAppFees);
+        btn = findViewById(R.id.buttonAppReg);
         tv = findViewById(R.id.textViewExistingUser);
 
         //to go to the login page
