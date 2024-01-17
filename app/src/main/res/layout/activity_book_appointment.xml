@@ -151,12 +151,12 @@
     <!--        tools:layout_editor_absoluteX="57dp" />-->
 
     <Button
-        android:id="@+id/buttonAppReg"
+        android:id="@+id/buttonAppBookAppointment"
         android:layout_width="328dp"
         android:layout_height="48dp"
         android:layout_marginTop="128dp"
         android:background="@drawable/btn_bg"
-        android:text="Register"
+        android:text="Book Appointment"
         android:textColor="@color/yellow_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
@@ -167,12 +167,12 @@
         android:id="@+id/buttonAppBack"
         android:layout_width="323dp"
         android:layout_height="41dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/btn_bg"
         android:text="BACK"
         android:textColor="@color/yellow_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
