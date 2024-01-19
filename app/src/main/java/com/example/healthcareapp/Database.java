@@ -18,6 +18,9 @@ public class Database extends SQLiteOpenHelper {
         String qry1 = "create table users(email text, username text, password text)";
         sqLiteDatabase.execSQL(qry1);
 
+        String qry2 = "create table cart(username text, product text, price float, otype text)";
+        sqLiteDatabase.execSQL(qry2);
+
     }
 
     @Override
@@ -61,5 +64,16 @@ public class Database extends SQLiteOpenHelper {
             result = 1;
         }
         return result;
+    }
+
+    public void addCart(String username, String product, float price, String otype){
+        ContentValues cv = new ContentValues();
+        cv.put("username", username);
+        cv.put("product", product);
+        cv.put("price", price);
+        cv.put("otype", otype);
+        SQLiteDatabase db = getWritableDatabase();
+        db.insert("cart", null, cv);
+        db.close();
     }
 }
