@@ -76,4 +76,27 @@ public class Database extends SQLiteOpenHelper {
         db.insert("cart", null, cv);
         db.close();
     }
+
+    public int checkCart(String username, String product){
+        int result =0;
+        String str[] = new String[2];
+        str[0]=username;
+        str[1]=product;
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from cart where username = ? and product = ?", str);
+        if(c.moveToFirst()){
+            result = 1;
+        }
+        db.close();
+        return result;
+    }
+
+    public void removeCart(String username, String otype){
+        String str[] = new String[2];
+        str[0]=username;
+        str[1]=otype;
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("cart", "username=? and otype=?", str);
+        db.close();
+    }
 }
