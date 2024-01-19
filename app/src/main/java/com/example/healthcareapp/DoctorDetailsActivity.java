@@ -17,45 +17,45 @@ import java.util.HashMap;
 public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctorDetails1 =
             {
-                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "600"},
-                    {"Doctor Name : Raihan Chowdhury", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
-                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "300"},
+                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "900"},
+                    {"Doctor Name : Shimul Das", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
+                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "500"},
                     {"Doctor Name : Marjana Jannat", "Hospital Address : Subidbazar", "Exp : 10yrs", "Mobile No : 01735682908", "500"},
                     {"Doctor Name : Sadia Sakhawat", "Hospital Address : Uttara", "Exp : 9yrs", "Mobile No : 01735682880", "800"}
             };
 
     private String[][] doctorDetails2 =
             {
-                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "600"},
-                    {"Doctor Name : Raihan Chowdhury", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
-                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "300"},
+                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "900"},
+                    {"Doctor Name : Shimul Das", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
+                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "500"},
                     {"Doctor Name : Marjana Jannat", "Hospital Address : Subidbazar", "Exp : 10yrs", "Mobile No : 01735682908", "500"},
                     {"Doctor Name : Sadia Sakhawat", "Hospital Address : Uttara", "Exp : 9yrs", "Mobile No : 01735682880", "800"}
             };
 
     private String[][] doctorDetails3 =
             {
-                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "600"},
-                    {"Doctor Name : Raihan Chowdhury", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
-                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "300"},
+                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "900"},
+                    {"Doctor Name : Shimul Das", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
+                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "500"},
                     {"Doctor Name : Marjana Jannat", "Hospital Address : Subidbazar", "Exp : 10yrs", "Mobile No : 01735682908", "500"},
                     {"Doctor Name : Sadia Sakhawat", "Hospital Address : Uttara", "Exp : 9yrs", "Mobile No : 01735682880", "800"}
             };
 
     private String[][] doctorDetails4 =
             {
-                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "600"},
-                    {"Doctor Name : Raihan Chowdhury", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
-                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "300"},
+                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "900"},
+                    {"Doctor Name : Shimul Das", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
+                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "500"},
                     {"Doctor Name : Marjana Jannat", "Hospital Address : Subidbazar", "Exp : 10yrs", "Mobile No : 01735682908", "500"},
                     {"Doctor Name : Sadia Sakhawat", "Hospital Address : Uttara", "Exp : 9yrs", "Mobile No : 01735682880", "800"}
             };
 
     private String[][] doctorDetails5 =
             {
-                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "600"},
-                    {"Doctor Name : Raihan Chowdhury", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
-                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "300"},
+                    {"Doctor Name : Sabbir Ahmed", "Hospital Address : Akhalia", "Exp : 2yrs", "Mobile No : 01735682978", "900"},
+                    {"Doctor Name : Shimul Das", "Hospital Address : Bonani", "Exp : 2yrs", "Mobile No : 01735682990", "900"},
+                    {"Doctor Name : Priyangka Purna", "Hospital Address : Taltola", "Exp : 5yrs", "Mobile No : 01735688976", "500"},
                     {"Doctor Name : Marjana Jannat", "Hospital Address : Subidbazar", "Exp : 10yrs", "Mobile No : 01735682908", "500"},
                     {"Doctor Name : Sadia Sakhawat", "Hospital Address : Uttara", "Exp : 9yrs", "Mobile No : 01735682880", "800"}
             };
