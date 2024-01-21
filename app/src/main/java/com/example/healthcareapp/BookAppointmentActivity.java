@@ -91,15 +91,15 @@ public class BookAppointmentActivity extends AppCompatActivity {
                 Database db = new Database(getApplicationContext(), "healthcare", null, 1);
                 SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedpreferences.getString("username", "").toString();
-
-                if(db.checkAppointmentExists(username,title+" => "+fullName, address, contact, dateButton.getText().toString(), timeButton.getText().toString())==1){
-                    Toast.makeText(getApplicationContext(), "Another Appointment is Already Booked at This Time", Toast.LENGTH_SHORT).show();
-                }
-                else{
+//
+//                if(db.checkAppointmentExists(username,title+" => "+fullName, address, contact, dateButton.getText().toString(), timeButton.getText().toString())==1){
+//                    Toast.makeText(getApplicationContext(), "Another Appointment is Already Booked at This Time", Toast.LENGTH_SHORT).show();
+//                }
+//                else{
                     db.addOrder(username, title+" => "+fullName, address, contact, 0, dateButton.getText().toString(), timeButton.getText().toString(), Float.parseFloat(fees), "appointment");
                     Toast.makeText(getApplicationContext(), "Your Appointment is Done Successfully", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(BookAppointmentActivity.this, HomeActivity.class));
-                }
+//                }
             }
         });
     }
