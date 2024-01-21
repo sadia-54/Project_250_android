@@ -35,9 +35,9 @@ public class Database extends SQLiteOpenHelper {
 
     public  void register(String email, String username, String password){
         ContentValues cv = new ContentValues();
-        cv.put(email, email);
-        cv.put(username, username);
-        cv.put(password, password);
+        cv.put("email", email);
+        cv.put("username", username);
+        cv.put("password", password);
         SQLiteDatabase db = getWritableDatabase();
         db.insert("users", null, cv);
         db.close();
@@ -46,7 +46,7 @@ public class Database extends SQLiteOpenHelper {
     //to check the pass is correct
 
     public int login(String username, String password){
-        int result = 1;
+        int result = 0;
         String str[] = new String[2];
         str[0] = username;
         str[1] = password;
@@ -139,5 +139,25 @@ public class Database extends SQLiteOpenHelper {
         }
         db.close();
         return arr;
+    }
+
+    // to check doctor appointment
+    public int checkAppointmentExists(String username, String fullName, String address, String contact, String date, String time){
+        int result = 0;
+        String str[] = new String[6];
+        str[0] = username;
+        str[1] = fullName;
+        str[2] = address;
+        str[3] = contact;
+        str[4] = date;
+        str[5] = time;
+
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from orderplace where username = ? and fullName = ? and address = ? and contact = ? and date = ? and time = ?", str);
+        if(c.moveToFirst()){
+            result = 1;
+        }
+        db.close();
+        return result;
     }
 }

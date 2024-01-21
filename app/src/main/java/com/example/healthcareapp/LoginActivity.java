@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         edUsername = findViewById(R.id.editTextLoginUsername);
-        edPassword = findViewById(R.id.editTextAppContactNumber);
+        edPassword = findViewById(R.id.editTextLoginPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textViewNewUser);
 
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                 // to check the username or password is empty or not
                 String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
-                Database db = new Database(getApplicationContext(), "HealthCare", null, 1);
+                Database db = new Database(getApplicationContext(), "healthcare", null, 1);
                 if (username.length() == 0 || password.length() == 0) {
                     Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT).show();
                 } else {
@@ -54,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+
 
         // for new user
         tv.setOnClickListener(new View.OnClickListener(){

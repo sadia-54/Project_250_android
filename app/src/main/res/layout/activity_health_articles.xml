@@ -4,6 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back1"
     tools:context=".HealthArticlesActivity">
+
+    <TextView
+        android:id="@+id/textViewHAName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Healthy"
+        android:textColor="@color/purple_100"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/textViewHATitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Articles"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHAName"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ListView
+        android:id="@+id/listViewHA"
+        android:layout_width="314dp"
+        android:layout_height="349dp"
+
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHATitle"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/textViewHATitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHATitle" />
+
+    <Button
+        android:id="@+id/buttonHABack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewHA"
+        app:layout_constraintVertical_bias="0.525" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
