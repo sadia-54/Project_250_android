@@ -16,10 +16,10 @@ import java.util.HashMap;
 public class HealthArticlesActivity extends AppCompatActivity {
 
     private  String[][] healthDetails = {
-            {"Walking Daily", "", "", "", "Click More Details"},
+            {"Walking Regularly", "", "", "", "Click More Details"},
             {"Home Care of COVID-19", "", "", "", "Click More Details"},
-            {"Stop Smoking", "", "", "", "Click More Details"},
-            {"Menstrual Cramps", "", "", "", "Click More Details"},
+            {"Don't Smoke", "", "", "", "Click More Details"},
+            {"Menstrual Hygiene", "", "", "", "Click More Details"},
             {"Healthy Gut", "", "", "", "Click More Details"},
     };
 
